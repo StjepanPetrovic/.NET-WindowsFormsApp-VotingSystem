@@ -25,11 +25,7 @@ namespace VotingSystem
             voter.OIB = txtOIB.Text;
             voter.Option = cbBoxOption.Text;
 
-            if (voter.OIB == "")
-            {
-                MessageBox.Show("Please, enter OIB");
-            }
-            else if (VoteRepository.AlreadyVote(voter.OIB))
+            if (VoteRepository.AlreadyVote(voter.OIB))
             {
                 MessageBox.Show("OIB is already used.");
             }
@@ -54,7 +50,10 @@ namespace VotingSystem
                 {
                     MessageBox.Show("Please, choose option.");
                 }
+
             }
+
+            
         }
     }
 }
