@@ -25,7 +25,29 @@ namespace VotingSystem
             voter.OIB = txtOIB.Text;
             voter.Option = cbBoxOption.Text;
 
-            if (VoteRepository.AlreadyVote(voter.OIB))
+            int NumChar = 0;
+            bool OibIsFalse = false;
+
+            foreach (char character in voter.OIB)
+            {
+                NumChar++;
+
+                if (Char.IsLetter(character))
+                {
+                    OibIsFalse = true;
+                    break;
+                }
+            }
+
+            if (voter.OIB == "")
+            {
+                MessageBox.Show("Please, enter OIB");
+            }
+            else if (OibIsFalse || NumChar != 11)
+            {
+                MessageBox.Show("Please, enter correct OIB (11 digits)");
+            }
+            else if (VoteRepository.AlreadyVote(voter.OIB))
             {
                 MessageBox.Show("OIB is already used.");
             }
@@ -50,10 +72,7 @@ namespace VotingSystem
                 {
                     MessageBox.Show("Please, choose option.");
                 }
-
             }
-
-            
         }
     }
 }
