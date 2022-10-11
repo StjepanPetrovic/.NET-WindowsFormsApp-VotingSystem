@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace VotingSystem
 {
-    public partial class Form1 : Form
+    public partial class FormVoting : Form
     {
-        public Form1()
+        public FormVoting()
         {
             InitializeComponent();
         }
