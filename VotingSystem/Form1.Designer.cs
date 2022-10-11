@@ -87,13 +87,14 @@
             this.btnVote.TabIndex = 4;
             this.btnVote.Text = "Vote";
             this.btnVote.UseVisualStyleBackColor = true;
+            this.btnVote.Click += new System.EventHandler(this.btnVote_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(268, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 20);
+            this.label3.Size = new System.Drawing.Size(80, 16);
             this.label3.TabIndex = 5;
             this.label3.Text = "Vote results:";
             // 
@@ -102,7 +103,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(268, 50);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 20);
+            this.label4.Size = new System.Drawing.Size(38, 16);
             this.label4.TabIndex = 6;
             this.label4.Text = "FOR:";
             // 
@@ -120,7 +121,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(268, 83);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 20);
+            this.label6.Size = new System.Drawing.Size(69, 16);
             this.label6.TabIndex = 8;
             this.label6.Text = "AGAINST:";
             // 
@@ -129,7 +130,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(268, 121);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(109, 20);
+            this.label8.Size = new System.Drawing.Size(87, 16);
             this.label8.TabIndex = 10;
             this.label8.Text = "ABSTAINED:";
             // 

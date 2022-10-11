@@ -8,6 +8,7 @@ namespace VotingSystem
 {
     internal class Voter
     {
-        
+        public string OIB { get; set; }
+        public string Option { get; set; }
     }
 }
